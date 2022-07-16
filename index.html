@@ -163,6 +163,7 @@
             display: flex;
             list-style: none;
             width: 50%;
+            margin-top: 5px;
             justify-content: space-between;
         }
         nav ul li a{
@@ -234,7 +235,10 @@
             margin: 20px 10px;
             transition-timing-function: ease-in-out;
         }
-
+        .project-list a{
+            color: white;
+            text-decoration: none;
+        }
         .proj p{
             visibility: hidden;
 			background-color: #000000c6;
@@ -285,6 +289,17 @@
         }
         .right{
             margin-left: 10%;
+        }
+        .left a{
+            display: flex;
+            height: 23px;
+            margin-top: -10px;
+            /* place-content: center; */
+            /* align-items: center; */
+            /* align-content: center; */
+        }
+        .left p{
+            margin-left: 7px;
         }
         .footer-img{
             width: 20px;
@@ -525,6 +540,7 @@
                 margin-left: -180px;
                 /* width: 600px; */
                 height: 25px;
+                margin-top: 7px;
                 /* text-align: center; */
             }
 
@@ -547,7 +563,7 @@
                 grid-template-areas: 
                     'hero hero'
                     'foto2 foto3';
-                margin-left: 80px;
+                margin-left: 70px;
             }
 
             .hero{
@@ -577,7 +593,7 @@
             /* project list */
             .project-list{
                 display: block;
-                margin: 0px;
+                margin:10px 0 0 0;
                 /* top: 50%; */
                 /* left: 30%; */
                 position: relative;
@@ -594,7 +610,7 @@
                 background-color: #00000000;
                 width: 200px;
                 position: relative;
-                margin-top:-160px;
+                margin-top:-130px;
                 z-index: -1;
             }
             
@@ -604,7 +620,7 @@
                 padding-bottom: 50px;
             }
             .left{
-                margin-left: 35%;
+                margin-left: 30%;
                 margin-right: 20%;
             }
             .right{
@@ -687,33 +703,27 @@
         <div id="project" style="font-size: 30px;">
             <p class="carter">My Project(s)</p>
             <div class="project-list">
-                <div class="proj proj1">
-                    <!-- <p class="proj-title concert">Sweet Space</p>
-                    <p class="detail baloo">Website Pesan Makan</p>
-                    <p class="detail baloo">Native PHP</p> -->
-                    <p class="baloo detail">
-                        Sweet Space 
-                        <br> 
-                        <br>
-                        <!-- <span class="baloo detail"> -->
-                            Website Pesan Makan
-                        <br> 
+                <a href="">
+                    <div class="proj proj1">
+                        <!-- <p class="proj-title concert">Sweet Space</p>
+                        <p class="detail baloo">Website Pesan Makan</p>
+                        <p class="detail baloo">Native PHP</p> -->
+                        <p class="baloo detail">
+                            Sweet Space 
+                            <br> 
                             Native PHP
-                        <!-- </span> -->
-                    </p>
-                </div>
-                <div class="proj proj2">
-                    <p class="baloo detail">
-                        Nginep 
-                        <br> 
-                        <br> 
-                        <!-- <span class="baloo detail"> -->
-                            Website Hotel
-                        <br> 
+                        </p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="proj proj2">
+                        <p class="baloo detail">
+                            Nginep 
+                            <br> 
                             Native PHP
-                        <!-- </span> -->
-                    </p>
-                </div>
+                        </p>
+                    </div>
+                </a>
                 <!-- <div class="proj proj3">
                     <p class="detail baloo">3</p>
                 </div>
@@ -743,10 +753,10 @@
     
     <section class="footer">
         <div class="left">
-            <a href="https://www.google.com/maps/search/Batam/@0.8371259,103.4926128,9z" target="_blank"><img src="location.png" alt="" class="footer-img">  Batam, Indonesia </a><br>
-            <a href="https://wa.me/6281275623262" target=”_blank”><img src="wa.png" alt="" class="footer-img"> 0812-7562-3262</a><br>
-            <a href="https://instagram.com/thea_hdk" target=”_blank”><img src="instagram.png" alt="" class="footer-img"> thea_hdk</a><br>
-            <a href="mailto:hillary.thea@gmail.com" target=”_blank”><img src="mail.png" alt="" class="footer-img"> hillary.thea@gmail.com</a>
+            <a href="https://www.google.com/maps/search/Batam/@0.8371259,103.4926128,9z" target="_blank"><img src="location.png" alt="" class="footer-img">  <p>Batam, Indonesia</p> </a><br>
+            <a href="https://wa.me/6281275623262" target=”_blank”><img src="wa.png" alt="" class="footer-img"> <p>0812-7562-3262</p></a><br>
+            <a href="https://instagram.com/thea_hdk" target=”_blank”><img src="instagram.png" alt="" class="footer-img"> <p>thea_hdk</p></a><br>
+            <a href="mailto:hillary.thea@gmail.com" target=”_blank”><img src="mail.png" alt="" class="footer-img"> <p>hillary.thea@gmail.com</p></a>
         </div>
         
         <div class="right">
